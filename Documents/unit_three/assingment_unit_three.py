@@ -1,24 +1,37 @@
 
 
-def area_of_base(length, width):
-    width = 4
-    length = 3
-    area_of_base = length * width
-    return area_of_base
+def printInstruction():
+    print("This program calculates the serfacearea of the rectangle")
+    print("Please enter the data of the rectangle")
 
-def area_of_side(width, height):
-    width = 4
-    height = 9
-    area_of_side = width * height
-    return area_of_side
+def getUsersinput():
+    Length = input("Enter Length:")
+    return float(Length)
+    width = input("Enter Width:")
+    return float(Width)
+    height = input("Enter Height:")
+    return float(Height)
 
-def area_of_front(length, height):
-    length = 3
-    height = 9
-    area_of_front = length * height
+def sidearea1():
+    sidearea1 = Length * Width
 
-def main(surface):
-    surface = area_of_base + area_of_side + area_of_front
-    print(surface)
+def sidearea2():
 
-main(surface)
+
+def sidearea3():
+
+
+def surfacearea():
+
+
+
+def main():
+    printInstruction()
+    getUsersinput()
+    sidearea1()
+    sidearea2()
+    sidearea3()
+    surfacearea()
+    printresult()
+
+main()
