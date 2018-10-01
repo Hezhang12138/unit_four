@@ -10,13 +10,19 @@ def the_area_of_the_rectangle(length, width):
     return area
 
 
+def the_surface_area_of_the_rectangle(length, width, height):
+    front = length * height
+    side = width * height
+    top = length * width
+
+
 def getLength():
     length = input("Enter Length:")
     return length
 
 
 def getWidth():
-    width = input("Enter With:")
+    width = input("Enter Width:")
     return width
 
 
@@ -25,32 +31,12 @@ def getHeight():
     return height
 
 
-def sidearea1():
-    sidearea1 = length * getWidth()
-
-
-def sidearea2():
-    sidearea2 = getWidth() * getHeight()
-
-
-def sidearea3():
-    sidearea3 = getLength() * getHeight()
-
-
-def surfacearea():
-    surfacearea = sidearea1() + sidearea2() + sidearea3()
-
-
-
 def main():
     printInstruction()
     length = getLength()
     width = getWidth()
     height = getHeight()
-    sidearea1()
-    sidearea2()
-    sidearea3()
-    surfacearea()
+    the_surface_area_of_the_rectangle()
     printresult()
 
 main()
