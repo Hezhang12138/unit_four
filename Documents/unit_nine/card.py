@@ -4,7 +4,8 @@ class Card:
 
         self.rank = rank
         self.suit = suit
-
+        self.ranks = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"]
+        self.suits = ["Spades", "Hearts", "Diamonds", "Clubs"]
 
     def compared_to(self, other_card):
         if self.rank > other_card.rank:
@@ -16,3 +17,9 @@ class Card:
                 return self
             else:
                 return other_card
+
+    def __str__(self):
+        ranks = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"]
+        suits = ["Spades", "Hearts", "Diamonds", "Clubs"]
+        new_card = ranks[self.rank] + " of " + suits[self.suit]
+        return new_card

@@ -23,4 +23,4 @@ def compare_cards():
 def main():
     player1, player2 = deal_cards()
     compared_to(list1, list2)
-    
+
